@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Play Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <div class="modal hidden">
+        <button class="close">&times;</button>
+        <h1 class="modalText h1">About the Game😍</h1>
+        <p class="modalText">
+          There is secret number between 1 to 20 decided by the game. You need
+          to guess the secret number using the clues provided. Every wrong guess
+          will decrease your score. <br>
+          You have to Enter your number into the box and hit <em>Check</em> . <br>
+          To Play the game again , Hit <em>Play Again</em> 
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+      <section class="left">
+        <form></form>
+        <input type="number" class="guess"/>
+        <button type="submit" class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <button class="btn help">Help!</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
